@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Refresh Me</h1>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img class="img1" src="" />
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img class="img2" src="" />
+      </div>
+    </div>
+
+    <script>
+      var num1=Math.floor(Math.random()*6)+1,num2=Math.floor(Math.random()*6)+1;
+      var img1=document.querySelector(".img1"),img2=document.querySelector(".img2");
+      if(num1===1)
+      {
+        img1.setAttribute("src","./images/dice1.png")
+      }
+      if(num1===2)
+      {
+        img1.setAttribute("src","./images/dice2.png")
+      }
+      if(num1===3)
+      {
+        img1.setAttribute("src","./images/dice3.png")
+      }
+      if(num1===4)
+      {
+        img1.setAttribute("src","./images/dice4.png")
+      }
+      if(num1===5)
+      {
+        img1.setAttribute("src","./images/dice5.png")
+      }
+      if(num1===6)
+      {
+        img1.setAttribute("src","./images/dice6.png")
+      }
+      if(num2===1)
+      {
+        img2.setAttribute("src","./images/dice1.png")
+      }
+      if(num2===2)
+      {
+        img2.setAttribute("src","./images/dice2.png")
+      }
+      if(num2===3)
+      {
+        img2.setAttribute("src","./images/dice3.png")
+      }
+      if(num2===4)
+      {
+        img2.setAttribute("src","./images/dice4.png")
+      }
+      if(num2===5)
+      {
+        img2.setAttribute("src","./images/dice5.png")
+      }
+      if(num2===6)
+      {
+        img2.setAttribute("src","./images/dice6.png")
+      }
+      if(num1>num2)
+      {
+        document.querySelector("h1").textContent="Player 1 wins";
+      }
+      else if(num2>num1)
+      {
+        document.querySelector("h1").textContent="Player 2 wins";
+      }
+      else
+      {
+        document.querySelector("h1").textContent="Draw";
+      }
+    </script>
+  </body>
+</html>
